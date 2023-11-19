@@ -1,0 +1,506 @@
+/* Tipo de letra  */
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Resetear la decoracion de las listas */
+ol, ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+/* Resetear la decoracion de los textos */
+a {
+    text-decoration: none;
+    transition: color 0.1s ease;    /* Transicion suave cambio color  */
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */ 
+    color: gray;    /* Color al pasar el mouse */
+}
+
+/* Propiedades del cuerpo de la pagina */
+body {
+    margin: 0px 20px;   /* Margen sup-inf. 0 e izq-der 40 */
+    padding: 0px 20px;  /* Relleno sup-inf. 0 e izq-der 40 */
+}
+
+/* Propiedades del encabezado de la pagina */
+header {
+    display: flex;  /* Contenedor flexible */
+    background-color: rgba(190,218,242,255);  /* Color del fondo */ 
+    align-items: center;    /* Alinear los elementos verical */
+    justify-content: space-between; /* Alinear los elemntos horizontal */
+}
+
+.Menu {
+    display: flex;  /* Contenedor flexible */
+    gap: 25px;  /* Espacio entre filas y columnas */
+    margin-right: 30px; /* margen derecho de la palabra contacto */
+}
+/* Imagen del logo superior */
+.Logo {
+    width: 120px;  /* Ancho de la imagen */
+    height: auto;  /* Alto automatico */
+    margin-left: 20px;  /* margen izquierdo de la imagen */
+}
+/* Color del texto de las listas en negro */
+ul li a {
+    color: black;
+}
+
+/* Menu hamburguesa */
+#check {
+    display: none;
+}
+.checkbtn {
+    font-size: 25px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+}
+
+
+/* Editamos PP del contenedor */
+#Seccion-Principal {
+    margin: 40px 0px 40px 0px;
+}
+
+/* Delimitar zona de trabajo con margen solida */
+.seccion-1 {
+    display: flex;  /* Contenedor flexible */
+    border: 2px solid black;    /* Borde */
+    padding: 20px;  /* Relleno */
+    flex-direction: column; /* Cambiar a dirección de columna para adaptarse a pantallas más pequeñas */
+}
+
+.Acerca-de {
+    text-align: center; /* Alinear al centro para dispositivos móviles */
+  }
+
+.Acerca-de h2 {
+    text-align: center;  /* Centrar elementos */
+    font-size: 35px;    /* Cambiar tamaño de texto */
+}
+
+.Imagen-mia img {
+    max-width: 250px; /* Para asegurar que la imagen se ajuste al contenedor */
+    display: block; /* Evitar el espacio adicional alrededor de la imagen */
+    border-radius: 20%; /* Bordes redondos */
+    margin: 20px auto; /* Centrar la imagen y ajustar el margen */
+  }
+
+.Texto-Bievenida {
+    text-align: left; /* Alinear al centro para dispositivos móviles */
+    font-size: 30px;    /* Cambiar tamaño de texto */
+}
+
+.Descripcion-mia {
+    text-align: justify;  /* Justificar texto */
+    line-height: 1.5;   /* Espacio entreLinea */
+    font-size: 25px;    /* Cambiar tamaño de texto */
+    margin: 20px 0; /* Añadir margen superior e inferior para separación */
+}
+
+
+
+/* Editamos PP del contenedor */
+.seccion-2 .SobreMi {
+    display: flex;
+    border: 2px solid black;
+    padding: 70px 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.Texto-Derecha {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 50px 0 20px;
+}
+.seccion-2 h2 {
+    font-size: 35px;    /* Cambiar tamaño de texto */
+}
+.seccion-2 .LaMeditacion {
+    line-height: 1.5;   /* Espacio entreLinea */
+    font-size: 25px;    /* Cambiar tamaño de texto */
+}
+.ReferenciaMeditacion {
+    padding: 10px 0 0 0;
+    font-size: 20px; /* Ajustado el tamaño del texto */
+    text-align: center;  /* Alinear texto a la derecha */
+}
+
+/* Configuración de animación */
+@keyframes AnimacionImg02 {
+    0% {
+        opacity: 0; /* Invisible */
+    }
+    50% {
+        opacity: 1; /* Visible */
+    }
+    100% {
+        opacity: 0; /* Invisible */
+    }
+}
+@keyframes AnimacionImg03 {
+    0% {
+        opacity: 1; /* Visible */
+    }
+    50% {
+        opacity: 0; /* Invisible */
+    }
+    100% {
+        opacity: 1; /* Visible */
+    }
+}
+.Contenedor-Img {
+    width: 350px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar verticalmente las imágenes */
+    justify-content: center;
+    position: relative;
+}
+
+.Imagen02, .Imagen03 {
+    top: -10px;
+    position: absolute;
+    margin: 5px; /* Añadir margen entre las imágenes */
+    left: 2%;
+}
+.Imagen02 {
+    opacity: 0; /* Comienza visible */
+    animation: AnimacionImg02 8s infinite;  /* 8 segundos de animación (8s + 8s) */
+}
+.Imagen03 {
+    opacity: 0; /* Comienza invisible */
+    animation: AnimacionImg03 8s infinite;  /* 8 segundos de animación (8s + 8s) */
+}
+
+
+#Contacto {
+    background-color: rgba(190,218,242,255);
+    border: 2px solid black;    /* Borde */
+    padding: 20px;  /* Relleno */
+}
+
+#Contacto .Contact h2 {
+    margin-left: 40px; /* margen Izq de la palabra */
+}
+
+nav .Menu-Redes {
+    display: flex;  /* Contenedor flexible */
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 25px;  /* Espacio entre filas y columnas */
+}
+
+
+
+.seccion-3 {
+    display: flex;  /* Contenedor flexible */
+    margin: 0 0 20px 0; /* Agrega un margen de 20px alrededor de cada Etapa */
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+/* Añadir un margen a cada clase de Etapa y tamaño de la misma para diseño responsive */
+.Etapa1, .Etapa2, .Etapa3 { 
+    width: 350px;    /* Define el ancho de la sección */
+    max-width: 500px;   /* Establece el ancho máximo de la sección */
+    padding: 20px; /* Agrega un relleno de 20px dentro de cada Etapa */
+    margin: 0 50px 0 0; /* Agrega un margen de 20px alrededor de cada Etapa */
+    align-content: center;
+}
+
+
+/* Tamaño de imagen dentro de Etapa */
+.Etapa1 img, .Etapa2 img, .Etapa3 img {
+    width: 300px; /* La imagen ocupará todo el ancho disponible dentro de su contenedor */
+    height: auto; /* La altura se ajustará automáticamente manteniendo la proporción */
+    border-radius: 4%;  /* Bordes redondos */
+}
+.Etapa3 {  /* Eliminar margen derecho de la palabra contacto  */
+    margin-right: 0;
+}
+
+
+
+/* Estilo para el texto dentro de Etapa */
+.Etapa1 h2, .Etapa2 h2, .Etapa3 h2 {
+    text-align: left;  /* Centrar elementos */
+    font-size: 35px;    /* Cambiar tamaño de texto */
+}
+/* Estilo para el texto dentro de Etapa */
+.Etapa1 P, .Etapa2 P, .Etapa3 P {
+    text-align: left;  /* Centrar elementos */
+    font-size: 30px;    /* Cambiar tamaño de texto */
+}
+
+/* Tamaño Logo Egg */
+.LogoEgg div {
+    display:  flex;
+    position: fixed;    /* Menu siempre encima de todo */
+    bottom: 50px;   /* Posicion abajo */
+    right: 60px;    /* Posicion derecha */
+    
+}
+.LogoEgg div img {
+    width: 30px;    
+}
+
+
+/* CSS General para Formulario */
+.form-header {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.form-header {
+    text-align: center;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    margin: 10px auto;
+    padding: 50px;
+}
+.form-header h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+/* Formulario */
+.formulario {
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+}
+
+/* Campos del Formulario */
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    /*justify-content: flex-start;*/
+    flex-direction: column;
+    /*flex-wrap: wrap;*/
+}
+
+.form-row label {
+    margin-bottom: 3px;
+    text-align: left;
+}
+
+
+.form-row input[type="text"], 
+.form-row input[type="email"],
+.form-row textarea {
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+    box-sizing: border-box; /* Asegura que el padding y el borde no afecten el ancho total */
+}
+
+.form-row textarea {
+    min-height: 200px;
+    margin-bottom: 3px;
+    padding: 10px;
+    resize: none;
+} 
+
+.form-row textarea {
+    font-size: 14px;
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+
+    min-height: 200px;
+
+    margin-bottom: 10px;
+    padding: 10px;
+    resize: none;
+    width: 100%;
+  }
+
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #5995da;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 40px;
+    cursor: pointer;
+  }
+.form-row .EnviaFormulario button:hover {
+    background-color: #76aeed;
+}
+.form-row .EnviaFormulario button:active {
+    background-color: #407fc7;
+}
+
+
+
+
+
+
+/* Para Pantallas de más de 700px Formulario*/
+@media only screen and (min-width: 896px) {
+    .form-header {
+      padding: 50px;
+    }
+    .form-row {
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .form-row input[type="email"],
+    .form-row input[type="text"] {
+      min-width: 300px; /*Ancho franja gris*/
+      margin-right: 10px; /* Añadido margen derecho para separar los campos en pantalla grande */
+    }
+    .form-row label {
+      text-align: left;
+      width: 150px;
+      margin-top: 7px;
+      padding-right: 20px;
+    }
+    .form-row textarea {
+        min-width: 300px;   /*Ancho franja gris*/
+        margin-right: 10px; /* Añadido margen derecho para separar los campos en pantalla grande */
+    }
+    .form-row button {
+        margin-left: auto; /* Mueve el botón a la derecha en pantalla grande */
+  }
+}
+
+/* Estilos para pantallas más pequeñas (hasta 896px) */
+@media (max-width: 896px) {
+    .seccion-1 {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .seccion-2 .SobreMi {
+        flex-direction: column; /* Cambia a disposición de columna para dispositivos más pequeños */
+        align-items: center; /* Centra los elementos */
+        padding: 30px 10px; /* Ajusta el relleno */
+    }
+
+    /*Posicion de los textos cuando presiono la hamburgueza*/
+    nav .Menu-Redes {
+        flex-direction: column; /* Cambiar la dirección a columna para que se apilen uno encima del otro */
+        align-items: center; /* Centrar los elementos */
+        text-align: center; /* Alinear el texto al centro */
+    }
+    .Contact h2 {
+        text-align: center; /* Alinear el texto al centro */
+    }
+    nav .Menu-Redes li {
+        margin-bottom: 10px; /* Añadir un margen inferior entre los elementos */
+    }
+    .Contenedor-Img {
+        width: 100%;
+        padding-bottom: 35%;
+    }
+    .Imagen02, .Imagen03 {
+        width: 90%;
+        height: auto;
+        align-items: center; /* Centrar los elementos */
+        justify-content: center;    /* Centrar los elementos */
+    }
+    .Texto-Derecha {
+        margin-top: 12%;
+    }
+
+    /*Posicion de hamburgueza*/
+    .checkbtn {
+        display: flex;
+        position: fixed;
+        right: -30px;
+    }
+
+
+    /*Modificar para acomodar hamburgueza*/
+    /*Modificar para acomodar hamburgueza*/
+    /*Modificar para acomodar hamburgueza*/
+    /*Modificar para acomodar hamburgueza*/
+    #encabezado ul {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        right: 100%; /*esconde Contenido */
+        top: 80px;
+        width: 120px;/*ancho Contenido */
+        height: 17%; /*altura Contenido */
+        transition: .5s ease-in-out; 
+        background-color: aqua;
+        font-size: 15px; 
+        line-height: 30px;
+        
+    }
+    #check:checked ~ ul {
+        left: 0;
+        display: block;
+    }
+    
+    /*#encabezado nav ul li {
+        margin: 50px 0;
+        line-height: 10px;
+    }
+    #encabezado nav ul li a {
+        font-size: 35px;
+    }*/
+
+    /*Color hamburgueza luego de seleccionar*/
+    #check:checked ~ .checkbtn {
+        color: rgb(58, 57, 57);
+    }
+
+    /* ocultar las imágenes .Imagen02-03 con el menú hamburguesa */
+    .menu-activo .Imagen02, .menu-activo .Imagen03 {
+        display: none; /* Ocultar las imágenes cuando el menú está activado */
+        transition: all 0.5s;
+    }
+}
+
+
+
+
+/* Estilos para pantallas más pequeñas (hasta 450px) */
+@media (max-width: 450px) {
+    .Contenedor-Img {
+        width: 100%;
+    }
+    .Imagen02, .Imagen03 {
+        width: 90%;
+        height: auto;
+        align-items: center; /* Centrar los elementos */
+        justify-content: center;    /* Centrar los elementos */
+    }
+}
+
+
+/*  */

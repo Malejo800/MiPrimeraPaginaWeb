@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi-WEB</title>
+    <link rel="stylesheet" href="Style2.css" />
+
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div class="Container" id="Home">
+
+    <header id="encabezado">
+      <a href="Index.html"><img class="Logo" src="Imagenes/Logo.JPG" alt="Logo"/></a>
+      <nav>
+
+    
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn" onclick="buttons()">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <ul class="Menu" id="nav-btns" class="nav-btns">
+          <li><a href="#Home">Inicio</a></li>
+          <li><a href="#About">Acerca mi</a></li>
+          <li><a href="#Work">Random</a></li>
+          <li><a href="#Servicios">Etapa</a></li>
+          <li><a href="#Contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!--TIPO DE LETRA-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+    </header>
+
+
+    <main id="Seccion-Principal">
+      <section class="seccion-1" id="About">
+        <div class="Acerca-de">
+          <h2 class="AcercaTitulo">ACERCA DE MI</h2>
+          <p class="Texto-Bievenida">Bienvenidos a mi web</p>
+          <p class="Descripcion-mia">Hola, me presento soy, 
+            <strong> Mario Alejandro.</strong> Actualmente trabajo como auxiliar de arquitectura. Vivo en la ciudad de Cali-Colombia. <strong>¿Y Por qué ahora programación?</strong> Me encanta crear, ser libre, aprender nuevas cosas y desde pequeño me ha fascinado. Y ahora que puedo, me estoy adentrando en este gran mundo. No miento, estoy asustado, pero siendo sincero, toda gran aventura empieza así, con el protagonista un poco nervioso, pero con un norte claro. Y el mio es. <strong>VIVIR Y DISFRUTAR LA PROGRAMACIÓN.</strong></p>
+        </div>
+        <div class="Imagen-mia">
+          <img src="Imagenes/FotoMia.JPG" alt="Foto del creado de la pagina web">
+        </div>
+      </section> <br> <br>  <br>
+
+
+      <section class="seccion-2" id="Work">
+        <div class="SobreMi">
+            <div class="Contenedor-Img"> 
+                <img src="Imagenes/02MEDITACION.JPG" alt="Hombre meditando" class="Imagen02">
+                <img src="Imagenes/03MEDITACION.JPG" alt="Dibujo abstracto de meditacion" class="Imagen03">
+            </div>
+            <div class="Texto-Derecha">
+                <h2>¿De dónde viene tu pregunta?, diálogo Zen</h2>
+                <p class="LaMeditacion">
+                    <strong>Un estudiante preguntó al maestro:</strong> <br>
+                    Todas las maravillas de la naturaleza, los árboles, las montañas, la tierra, ¿de dónde vienen? <br>
+                    <strong>El maestro replicó:</strong>  <br>
+                    ¿De dónde viene tu pregunta?
+                </p>
+                <p class="ReferenciaMeditacion"> Artículos relacionados: Una vida zencilla, 5 proverbios Zen</p>
+            </div>
+        </div>
+    </section>  <br>  <br>  <br>
+
+
+    <section class="seccion-3" id="Servicios">
+      <div class="Etapa1">
+        <img src="Imagenes/Prueba01.JPG" alt="Imagen de un libro abierto">
+        <h2>ETAPA 1</h2>
+        <P> Empezó con el colegio, las clases que más me gustaban era las de arte, manualidades, para mí eso era acción y felicidad. Realice muchos trabajos, pero sentimentalmente, la <strong>Virgen de Guadalupe</strong> en acrílico, tiene un lugar especial en mi corazón. </P>
+      </div>
+      <div class="Etapa2">
+        <img src="Imagenes/Prueba02.JPG" alt="Foto de una mujer con un fondo muy estetico">
+        <h2>ETAPA 2</h2>
+        <P> La mitad de mi vida, entre al SENA, a estudiar una tecnología en arquitectura, fue genial, maquetas, rénders, muchos trabajos manuales, pero para mí uno significativo fue el rénder de <strong>la casa de vidrio de Lina Bo Bardi.</strong>  </P>
+      </div>
+      <div class="Etapa3">
+        <img src="Imagenes/Prueba03.JPG" alt="Una casa modelada con un diseño animado">
+        <h2>ETAPA 3</h2>
+        <P> Actualmente la programación se ha tomado mi vida, me encanta aprender y crear. <strong>Fase inicial, cargando.</strong> </P>
+      </div>
+    </section>  <br>  <br>  <br>
+
+
+    
+    <footer>
+      <section class="LogoEgg"> 
+      <div>
+        <a href="https://egg.live/es-co/" target="_blank"> <img src="Imagenes/LogoEgg.png" alt="Logo Egg"></a>
+      </div>
+    </section>
+    </footer>
+
+
+  <!-- FORMULARIO -->  
+  <footer class="form-header">
+    <h1>FORMULARIO</h1>
+    <p><em>¡Esperamos tu consulta!</em></p>
+
+    <form action="" method="get" class="formulario" id="form">
+
+      <div class="form-row">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" type="text" />
+      </div>
+
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="Alejandro@gmail.com"
+        />
+      </div>
+
+      <div class="form-row">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" 
+        name="mensaje"
+        type= "Mensaje">
+      </textarea>
+      </div>
+
+      <div class="form-row">
+        <button class="EnviaFormulario">Enviar</button>
+      </div>
+    </form>
+  </footer>
+
+
+
+    <footer>
+      <section id="Contacto">
+        <div class="Contact">
+          <h2>Redes Sociales:</h2>
+          <nav>
+            <ul class="Menu-Redes">
+              <li><a href="https://wa.me/573156111952?text=Hola%2C+mire+tu+pagina+web+y+no+dude+en+contactarte." target="_blank">CONTACTO</a></li>
+               <li><a href="https://www.facebook.com/marioalejandro.lenguaarango?mibextid=ZbWKwL" target="_blank">FACEBOOK</a></li>
+               <li><a href="https://instagram.com/mario_lengua98?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">INSTAGRAM</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </footer>
+  </main>
+
+
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+
+  </body>
+</html>
+
+
